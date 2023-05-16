@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>websocket.js</title>
+</head>
+<body>
+    <div id="app">ioGame websocket.js</div>
+    <div id="output" style="margin-top:20px;border: 1px #ddd solid; height: 260px; overflow-y: auto;">
+    </div>
+    <div style="display: flex;flex-direction: column">
+        <div style="margin-top: 10px;">
+            <div style="width: 120px; display: inline-block;">cmd：</div><input id="cmd" style="height: 20px;padding-left: 5px;"/>
+        </div>
+        <div style="margin-top: 10px;">
+            <div style="width: 120px; display: inline-block;">subCmd：</div><input id="subCmd" style="height: 20px;padding-left: 5px;"/>
+        </div>
+        <div style="margin-top: 10px;">
+            <div style="width: 115px; display: inline-block;">消息体：</div>
+            <input id="sendMsg" value='{"password":"111", "userName":"charles", "userId": 1}' style="height: 30px;padding-left: 5px; width: 440px;"/>
+        </div>
+        <div style="margin-top: 10px;">
+            <button id="send" style="height: 36px;width: 100px;">发送</button>
+        </div>
+    </div>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/websocket.js"></script>
+    <script>
+	    addsocket();
+    </script>
+</body>
+</html>
